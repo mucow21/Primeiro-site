@@ -9,38 +9,42 @@
     
 </head>
 <body>
-    <header>
-        <nav class="nav-bar">
-            <a href="CadastroPagina.html" class="nav-link active" data-hover="Cadastrar">Cadastrar</a>
-            <a href="Alterar.html" class="nav-link" data-hover="Alterar">Alterar</a>
-            <a href="Consulta.html" class="nav-link" data-hover="Consulta">Consulta</a>
-            <a href="Deletar.html" class="nav-link" data-hover="Excluir">Excluir</a>
-          </nav>
-    </header>
-    <br>
-    <div>
-        <img style="width: 170px;" src="estudante.png" alt="">
-        <h2>Cadastrar Aluno</h2>
-        <form>
-            <div>
-                <label>Aluno:</label>
-                <input type="text" id="nome_aluno" name="nome_aluno" required>
-            </div>
+    <div class="container">
+        <div class="item">
+            <header>
+                <nav class="nav-bar">
+                    <a href="CadastroPagina.html" class="nav-link active" data-hover="Cadastrar">Cadastrar</a>
+                    <a href="Alterar.html" class="nav-link" data-hover="Alterar">Alterar</a>
+                    <a href="Consulta.html" class="nav-link" data-hover="Consulta">Consulta</a>
+                    <a href="Deletar.html" class="nav-link" data-hover="Excluir">Excluir</a>
+                  </nav>
+            </header>
             <br>
             <div>
-                <label>Curso:</label>
-                <input type="text" id="curso" name="curso" required>
+                <img style="width: 170px;" src="estudante.png" alt="">
+                <h2>Cadastrar Aluno</h2>
+                <form>
+                    <div>
+                        <label>Aluno:</label>
+                        <input type="text" id="nome_aluno" name="nome_aluno" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Curso:</label>
+                        <input type="text" id="curso" name="curso" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Horário de:</label>
+                        <input style="width: 70px" type="time" id="horario_inicial" name="horario_inicial" required>
+                        <label>até</label>
+                        <input style="width: 70px" type="time" id="horario_final" name="horario_final" required>
+                    </div>
+                </form>
+                <br>
+                <button type="submit">Cadastrar</button>
             </div>
-            <br>
-            <div>
-                <label>Horário de:</label>
-                <input style="width: 70px" type="time" id="horario_inicial" name="horario_inicial" required>
-                <label>até</label>
-                <input style="width: 70px" type="time" id="horario_final" name="horario_final" required>
-            </div>
-        </form>
-        <br>
-        <button type="submit">Cadastrar</button>
+        </div>
     </div>
 </body>
 </html>

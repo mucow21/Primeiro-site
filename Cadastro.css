@@ -15,10 +15,11 @@ input{
     width: 200px;
 }
 header {
-    background-color: #333;
+    background-color: rgb(54, 54, 179);
     color: #fff;
     padding: 10px;
     text-align: center;
+    border-radius: 50px;
 }
 body{
     margin: 0;
@@ -36,8 +37,8 @@ img{
   .nav-bar .nav-link {
     padding: 8px 0;
     margin: 0 20px;
-    color: #797878;
-    font-size: 19px;
+    color: white;
+    font-size: 17px;
     text-decoration: none;
     position: relative;
   }
@@ -50,7 +51,7 @@ img{
     max-width: 0;
     text-decoration: underline;
     text-underline-offset: 8px;
-    color: #0082fa;
+    color: black;
     content: attr(data-hover);
     -webkit-transition: max-width 0.5s;
     -moz-transition: max-width 0.5s;
@@ -58,7 +59,25 @@ img{
   }
   .nav-bar .nav-link:hover::before { max-width: 100%; }
   .nav-bar .active {
-    color: #0082fa;
+    color: black;
     text-decoration: underline;
     text-underline-offset: 8px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .item{
+    width: 470px;
+    height: 490px;
+    background: white;
+    border: solid 5px rgb(54, 54, 179);
+    border-radius: 50px;
   }
